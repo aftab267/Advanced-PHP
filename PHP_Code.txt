@@ -1,0 +1,105 @@
+
+
+Youtube channel: yahoo baba -35
+===========================================
+Multidimentional Array:
+<?php
+$emp=array(
+	   array(1,"aftab","mananger",50000),
+	   array(2,"susmita","salesperson",20000),
+	   array(3,"Abid","Computer orerator",12000),
+	   array(4,"Afrin","Peon",5000));
+
+
+	
+echo "<pre>";
+print_r ($emp);
+echo "</pre>";
+
+     
+
+?>
+====================================
+<?php
+$emp=array(
+	   array(1,"aftab","mananger",50000),
+	   array(2,"susmita","salesperson",20000),
+	   array(3,"Abid","Computer orerator",12000),
+	   array(4,"Afrin","Peon",5000));
+
+echo $emp[0][0]." ";
+echo $emp[0][1]." ";
+echo $emp[0][2]." ";
+echo $emp[0][3]." ";
+?>
+============================================================================
+<?php
+$emp=array(
+	   array(1,"aftab","mananger",50000),
+	   array(2,"susmita","salesperson",20000),
+	   array(3,"Abid","Computer orerator",12000),
+	   array(4,"Afrin","Peon",5000));
+
+for ($row = 0; $row< 4; $row++){  
+for ($col = 0; $col< 4; $col++){  
+echo $emp[$row][$col]." ";  
+}
+echo "<br>";
+}
+?>
+==========================================================
+<?php
+$emp=array(
+	   array(1,"aftab","mananger",50000),
+	   array(2,"susmita","salesperson",20000),
+	   array(3,"Abid","Computer orerator",12000),
+	   array(4,"Afrin","Peon",5000));
+foreach($emp as $v1){
+  foreach($v1 as $v2){
+    echo $v2 . " ";
+}
+echo "<br>";
+}
+?>
+=================================================================
+<?php
+$emp=array(
+     array(1,"John","Manager","50000"),
+     array(2,"max","Salesman","20000"),
+     array(3,"Oli","Computer Operator","12000"),
+     array(4,"Onil","Driver","5000"));
+
+foreach ($emp as $v1){  
+foreach ($v1 as $v2){
+echo " $v2 ";  
+}
+echo "</br>";
+}
+=============================================================
+
+?>
+<?php
+$emp=array(
+     array(1,"John","Manager","50000"),
+     array(2,"max","Salesman","20000"),
+     array(3,"Oli","Computer Operator","12000"),
+     array(4,"Onil","Driver","5000"));
+
+echo "<table border='2px' cellpadding='5px' cellspacing='0'>";
+echo "<tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Desig</th>
+        <th>Salary</th>
+        </tr>";
+foreach ($emp as $v1){
+  echo "<tr>";
+foreach ($v1 as $v2){
+echo " <td> $v2 </td> ";  
+}
+echo "</tr>";
+}
+echo "</table>";
+
+?>
+===================================================
