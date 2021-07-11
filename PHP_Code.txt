@@ -1,11 +1,10 @@
 ========================
 
-<form action="home.php" methos="post">
+<form action="home.php" method="get">
     <input type="text" name="username"><br>
     <input type="password" name="password"><br>
     <input type="submit" value="submit">
     </form>
-    
     <?php
           $usr=$_GET['username'];
           $pass=$_GET['password'];
@@ -13,4 +12,5 @@
           echo"<br>";
           echo $pass;
  ?>
+ 
  ===============================================
